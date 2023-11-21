@@ -1,0 +1,16 @@
+body {
+    font-family: https://fonts.google.com/specimen/Roboto;
+    margin: auto 0;
+}
+
+.whole-body {
+    background-color: hsl(235, 18%, 26%) ;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
