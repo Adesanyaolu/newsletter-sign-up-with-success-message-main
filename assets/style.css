@@ -1,9 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
 body {
     font-family: 'Roboto', sans-serif;
-    margin: auto 0;
     background-color: hsl(235, 18%, 26%) ;
-    height: 100vh;
-    font-size: 16px;
 }
 
 .whole-body {
@@ -12,8 +15,10 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 10rem;
-    
+    /* margin: 10rem; */
+    border-radius: 2rem;
+    width: 50rem;
+    /* height: 30vh; */
 }
 .attribution { 
     font-size: 11px; 
@@ -26,14 +31,21 @@ body {
 
 .content {
     margin: 10px;
+    align-items: flex-start;
+    line-height: 2.5;
+    text-align: justify;
+    width: 50%;
 }
 
 .content h1 {
     font-size: 700;
     color: hsl(234, 29%, 20%);
 }
-.img-section img {
-    height: 20%;
-    width: 20%;
 
+.img-section {
+    align-items: flex-end;
+}
+
+.img-section img {
+    height: 15rem;
 }
