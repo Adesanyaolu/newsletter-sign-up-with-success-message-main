@@ -7,33 +7,31 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: hsl(235, 18%, 26%) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 .whole-body {
     background-color: hsl(0, 0%, 100%);
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* margin: 10rem; */
     border-radius: 2rem;
     width: 50rem;
-    /* height: 30vh; */
-}
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-}
-
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+    height: 70vh;
 }
 
 .content {
     margin: 10px;
-    align-items: flex-start;
-    line-height: 2.5;
-    text-align: justify;
+    /* align-items: flex-start; */
+    line-height: 2.0;
+    /* text-align: justify; */
     width: 50%;
 }
 
@@ -42,10 +40,35 @@ body {
     color: hsl(234, 29%, 20%);
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.5rem;
+}
+
+form button {
+    width: 15rem;
+    margin-top: 0.5rem;
+    background-color: hsl(234, 29%, 20%);
+    color: black;
+    padding: 5px 0px;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
 .img-section {
     align-items: flex-end;
 }
 
 .img-section img {
     height: 15rem;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
