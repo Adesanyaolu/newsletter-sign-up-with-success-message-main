@@ -23,7 +23,7 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 2rem;
-    width: 50rem;
+    width: 45rem;
     /* height: 70vh; */
 }
 
@@ -36,9 +36,7 @@ body {
     color: hsl(234, 29%, 20%);
     font-weight: 500;
     font-size: smaller;
-    padding: 30px 0px;
-    
-    
+    padding: 30px 0px;    
 }
 
 .content h6 {
@@ -56,11 +54,10 @@ form {
 }
 
 form input {
-    padding: 15px;
+    padding: 10px 8px;
     width: 80%;
     border-radius: 5px;
-
-    /* border: none; */
+    border: 2px groove;
 }
 
 form button {
@@ -76,6 +73,10 @@ form button {
     font-weight: 700;
 }
 
+form button:hover {
+    background-color: hsl(4, 100%, 67%);
+}
+
 .img-section {
     align-items: flex-end;
 }
@@ -84,6 +85,14 @@ form button {
     height: 25rem;
 }
 
+.iconsText img {
+    width: 0.8rem;
+    height: 0.8rem;
+} 
+
+.iconsText span {
+    padding-left: .5rem;
+}
 .attribution { 
     margin-top: 3rem;
     font-size: 11px; 
