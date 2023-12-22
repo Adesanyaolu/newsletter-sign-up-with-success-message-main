@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-size: 16px;
 }
-
 body {
   font-family: "Roboto", sans-serif;
   background-color: hsl(235, 18%, 26%);
@@ -26,20 +25,23 @@ body {
   border-radius: 2rem;
   width: 45rem;
   /* height: 70vh; */
-}
-.wholeBody .content {
-  margin: 15px 10px;
-  line-height: 2;
-  width: 50%;
-  color: hsl(234, 29%, 20%);
-  font-weight: 500;
-  font-size: smaller;
-  padding: 30px 0px;
-}
-.wholeBody .content h6 {
-  font-size: 30px;
-  display: inline;
-  font-weight: 700;
+  
+
+  .content {
+    margin: 15px 10px;
+    line-height: 2;
+    width: 50%;
+    color: hsl(234, 29%, 20%);
+    font-weight: 500;
+    font-size: smaller;
+    padding: 30px 0px;
+
+    h6 {
+      font-size: 30px;
+      display: inline;
+      font-weight: 700;
+    }
+  }
 }
 
 form {
@@ -48,12 +50,13 @@ form {
   padding-top: 0.5rem;
   font-size: small;
   font-weight: 700;
-}
-form input {
-  padding: 10px 8px;
-  width: 80%;
-  border-radius: 5px;
-  border: 2px groove;
+
+  input {
+    padding: 10px 8px;
+    width: 80%;
+    border-radius: 5px;
+    border: 2px groove;
+  }
 }
 
 .button {
@@ -75,26 +78,29 @@ form input {
 
 .img-section {
   align-items: flex-end;
-}
-.img-section img {
-  height: 25rem;
+
+  img {
+    height: 25rem;
+  }
 }
 
 .iconsText img {
   width: 0.8rem;
   height: 0.8rem;
-}
-.iconsText img span {
-  padding-left: 0.5rem;
+
+  span {
+    padding-left: 0.5rem;
+  }
 }
 
 .attribution {
   margin-top: 3rem;
   font-size: 11px;
   text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
 }
 
 /* Success State  */
@@ -103,32 +109,39 @@ form input {
   position: relative;
   display: flex;
   flex-direction: column;
+  //   align-items: center;
+  //   justify-content: center;
   border-radius: 2rem;
   width: 23rem;
   padding: 20px 0px 0px 0px;
   display: none;
-}
-.successState img {
-  width: 4rem;
-  margin: 0.5rem;
-  padding: 0px 0px 0px 25px;
-}
-.successState h6 {
-  font-size: 30px;
-  display: inline;
-  font-weight: 700;
-  padding: 15px 0px 10px 25px;
-  font-size: 40px;
-}
-.successState p {
-  line-height: 1.5;
-  color: hsl(234, 29%, 20%);
-  font-weight: 500;
-  font-size: smaller;
-  padding: 15px 25px;
-  width: 20rem;
-}
-.successState .button {
-  margin: 25px;
-  width: 18rem;
+
+  img {
+    width: 4rem;
+    margin: 0.5rem;
+    padding: 0px 0px 0px 25px;
+  }
+
+  h6 {
+    font-size: 30px;
+    display: inline;
+    font-weight: 700;
+    padding: 15px 0px 10px 25px;
+    font-size: 40px;
+  }
+
+  p {
+    line-height: 1.5;
+    color: hsl(234, 29%, 20%);
+    font-weight: 500;
+    font-size: smaller;
+    padding: 15px 25px;
+    width: 20rem;
+  }
+
+  .button {
+    // background-color: red;
+    margin: 25px;
+    width: 18rem;
+  }
 }
