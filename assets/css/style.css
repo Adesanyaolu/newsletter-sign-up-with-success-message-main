@@ -1,134 +1,62 @@
+@font-face {
+  font-family: robotoRegular;
+  src: url(/assets/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: robotoBold;
+  src: url(/assets/fonts/Roboto-Bold.ttf);
+}
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  font-size: 16px;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: hsl(235, 18%, 26%);
+  font-family: robotoRegular;
+  background-color: hsl(234, 29%, 20%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
 }
 
 .wholeBody {
-  background-color: hsl(0, 0%, 100%);
-  position: relative;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  background-color: hsl(0, 0%, 100%);
   justify-content: center;
-  border-radius: 2rem;
-  width: 45rem;
-  /* height: 70vh; */
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
 }
 .wholeBody .content {
-  margin: 15px 10px;
-  line-height: 2;
-  width: 50%;
-  color: hsl(234, 29%, 20%);
-  font-weight: 500;
-  font-size: smaller;
-  padding: 30px 0px;
+  width: 60%;
+  list-style-image: url(/assets/images/icon-list.svg);
+  padding: 20px;
 }
-.wholeBody .content h6 {
-  font-size: 30px;
-  display: inline;
-  font-weight: 700;
+.wholeBody .content h1 {
+  font-family: robotoBold;
 }
-
-form {
-  display: flex;
-  flex-direction: column;
-  padding-top: 0.5rem;
-  font-size: small;
-  font-weight: 700;
-}
-form input {
-  padding: 10px 8px;
-  width: 80%;
+.wholeBody .content form input {
+  padding: 15px;
+  border: 1px solid hsl(231, 7%, 60%);
   border-radius: 5px;
-  border: 2px groove;
+  width: 90%;
 }
-
-.button {
-  width: 80%;
-  margin-top: 0.5rem;
-  background-color: hsl(234, 29%, 20%);
-  color: hsl(0, 0%, 100%);
-  padding: 10px 8px;
+.wholeBody .content form button {
+  width: 90%;
+  padding: 18px;
+  margin-top: 10px;
   border-radius: 5px;
-  box-shadow: none;
   border: none;
-  font-size: small;
-  font-weight: 700;
+  background-color: hsl(235, 18%, 26%);
+  color: hsl(0, 0%, 100%);
+}
+.wholeBody .img-section {
+  width: 40%;
+}
+.wholeBody .img-section img {
+  width: 100%;
 }
 
-.button:hover {
-  background-color: hsl(4, 100%, 67%);
-}
-
-.img-section {
-  align-items: flex-end;
-}
-.img-section img {
-  height: 25rem;
-}
-
-.iconsText img {
-  width: 0.8rem;
-  height: 0.8rem;
-}
-.iconsText img span {
-  padding-left: 0.5rem;
-}
-
-.attribution {
-  margin-top: 3rem;
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
-/* Success State  */
-.successState {
-  background-color: hsl(0, 0%, 100%);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  border-radius: 2rem;
-  width: 23rem;
-  padding: 20px 0px 0px 0px;
+.hide {
   display: none;
-}
-.successState img {
-  width: 4rem;
-  margin: 0.5rem;
-  padding: 0px 0px 0px 25px;
-}
-.successState h6 {
-  font-size: 30px;
-  display: inline;
-  font-weight: 700;
-  padding: 15px 0px 10px 25px;
-  font-size: 40px;
-}
-.successState p {
-  line-height: 1.5;
-  color: hsl(234, 29%, 20%);
-  font-weight: 500;
-  font-size: smaller;
-  padding: 15px 25px;
-  width: 20rem;
-}
-.successState .button {
-  margin: 25px;
-  width: 18rem;
 }
