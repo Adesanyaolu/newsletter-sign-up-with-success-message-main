@@ -17,6 +17,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 90vh;
 }
 
 .wholeBody {
@@ -26,6 +27,7 @@ body {
   align-items: center;
   padding: 20px;
   border-radius: 10px;
+  margin: 30px 0px 0px 0px;
 }
 .wholeBody .content {
   width: 60%;
@@ -35,11 +37,15 @@ body {
 .wholeBody .content h1 {
   font-family: robotoBold;
 }
+.wholeBody .content li {
+  padding: 5px 0px;
+}
 .wholeBody .content form input {
   padding: 15px;
   border: 1px solid hsl(231, 7%, 60%);
   border-radius: 5px;
   width: 90%;
+  cursor: text;
 }
 .wholeBody .content form button {
   width: 90%;
@@ -47,8 +53,13 @@ body {
   margin-top: 10px;
   border-radius: 5px;
   border: none;
+  outline: none;
   background-color: hsl(235, 18%, 26%);
   color: hsl(0, 0%, 100%);
+}
+.wholeBody .content form button:hover {
+  cursor: pointer;
+  background-color: hsl(4, 100%, 67%);
 }
 .wholeBody .img-section {
   width: 40%;
@@ -59,4 +70,72 @@ body {
 
 .hide {
   display: none;
+}
+
+.successState {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  width: 400px;
+  padding: 40px;
+  margin: 50px 0% 20px 0%;
+}
+.successState img {
+  margin: 15px 0px;
+}
+
+.success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.success img {
+  align-items: left;
+  display: block;
+  justify-content: left;
+}
+.success h1 {
+  font-family: robotoBold;
+  margin: 5px;
+}
+.success p {
+  padding: 15px 10px;
+  line-height: 25px;
+  margin: 0;
+}
+.success button {
+  width: 90%;
+  padding: 14px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: hsl(235, 18%, 26%);
+  color: hsl(0, 0%, 100%);
+}
+.success button:hover {
+  cursor: pointer;
+  background-color: hsl(4, 100%, 67%);
+}
+
+@media (max-width: 760px) {
+  body {
+    height: auto;
+  }
+  .wholeBody {
+    flex-direction: column-reverse;
+    margin: 0px;
+  }
+  .wholeBody .content {
+    width: 100%;
+  }
+  .wholeBody .img-section {
+    width: 100%;
+  }
+  .wholeBody .img-section img {
+    content: url(/assets/images/illustration-sign-up-mobile.svg);
+  }
+  .successState {
+    height: 80vh;
+  }
 }
