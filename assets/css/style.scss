@@ -10,7 +10,11 @@
 
 * {
   box-sizing: border-box;
+  // margin: 0; /* Remove default browser margins */
+  
+
 }
+
 
 body {
   font-family: robotoRegular;
@@ -20,16 +24,16 @@ body {
   justify-content: center;
   align-items: center;
   height: 90vh;
+  gap: 20px; /* Leave a space between the card and the footer */
 }
 
 .wholeBody {
-  display: flex;
-  background-color: hsl(0, 0%, 100%);
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  border-radius: 10px;
-  margin: 30px 0px 0px 0px;
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
 
   .content {
     width: 60%;
@@ -38,6 +42,7 @@ body {
 
     h1 {
       font-family: robotoBold;
+      font-size: 50px;
     }
 
     li  {
@@ -76,6 +81,7 @@ body {
 
     img {
       width: 100%;
+      height: 75vh;
     }
   }
 }
@@ -151,6 +157,10 @@ body {
 
   .content {
     width: 100%;
+
+    h1 {
+      font-size: 30px;
+    }
   }
 
   .img-section {
@@ -158,6 +168,7 @@ body {
 
     img {
       content: url(../images/illustration-sign-up-mobile.svg);
+      height: auto;
     }
   }
  }

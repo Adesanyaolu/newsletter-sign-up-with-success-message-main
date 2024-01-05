@@ -25,61 +25,63 @@
     </title>
   </head>
   <body>
-    <div class="wholeBody">
-      <!-- Sign-up form start -->
-      <div class="content">
-        <h1 class="test">Stay updated!</h1>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        <div>
-          <ul>
-            <li>Product discovery and building what matters</li>
-            <li>Measuring to ensure updates are a success</li>
-            <li>And much more!</li>
-          </ul>
+    <main>
+      <div class="wholeBody">
+        <!-- Sign-up form start -->
+        <div class="content">
+          <h1 class="test">Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <div>
+            <ul>
+              <li>Product discovery and building what matters</li>
+              <li>Measuring to ensure updates are a success</li>
+              <li>And much more!</li>
+            </ul>
+          </div>
+  
+          <form action="#">
+            <label for="email">
+              Email address
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="email@company.com"
+              />
+            </label>
+            <button class="button">Subscribe to monthly newsletter</button>
+          </form>
+          <!-- Sign-up form end -->
         </div>
-
-        <form action="">
-          <label for="email">
-            <p>Email address</p>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="email@company.com"
-            />
-          </label>
-          <button class="button">Subscribe to monthly newsletter</button>
-        </form>
-        <!-- Sign-up form end -->
+  
+        <div class="img-section">
+          <img src="assets/images/illustration-sign-up-desktop.svg" alt="graphics illustration" />
+        </div>
       </div>
-
-      <div class="img-section">
-        <img src="assets/images/illustration-sign-up-desktop.svg" alt="" />
+  
+      <!-- Success message start  -->
+      <div class="successState hide">
+        <img src="./assets/images/icon-success.svg" alt="Success icon" />
+        <div class="success">
+          <h1>Thanks for subscribing!</h1>
+          <p>
+            A confirmation email has been sent to
+            <strong id="userEmail">ash@loremcompany.com</strong>. Please open it and click the
+            button inside to confirm your subscription.
+          </p>
+          <button class="sucessButton button">Dismiss message</button>
+        </div>
       </div>
-    </div>
+      <!-- Success message end  -->
+    </main>
 
-    <!-- Success message start  -->
-    <div class="successState hide">
-      <img src="./assets/images/icon-success.svg" alt="" />
-      <div class="success">
-        <h1>Thanks for subscribing!</h1>
-        <p>
-          A confirmation email has been sent to
-          <strong id="userEmail">ash@loremcompany.com</strong>. Please open it and click the
-          button inside to confirm your subscription.
-        </p>
-        <button class="sucessButton button">Dismiss message</button>
-      </div>
-    </div>
-    <!-- Success message end  -->
-
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >
       Coded by <a href="#">Adesanyaolu</a>.
-    </div>
+    </footer>
   </body>
 
   <script src="./assets/scripts.js"></script>
