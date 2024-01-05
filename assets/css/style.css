@@ -1,10 +1,10 @@
 @font-face {
   font-family: robotoRegular;
-  src: url(/assets/fonts/Roboto-Regular.ttf);
+  src: url(../fonts/Roboto-Regular.ttf);
 }
 @font-face {
   font-family: robotoBold;
-  src: url(/assets/fonts/Roboto-Bold.ttf);
+  src: url(../fonts/Roboto-Bold.ttf);
 }
 * {
   box-sizing: border-box;
@@ -31,7 +31,7 @@ body {
 }
 .wholeBody .content {
   width: 60%;
-  list-style-image: url(/assets/images/icon-list.svg);
+  list-style-image: url(../images/icon-list.svg);
   padding: 20px;
 }
 .wholeBody .content h1 {
@@ -133,7 +133,7 @@ body {
     width: 100%;
   }
   .wholeBody .img-section img {
-    content: url(/assets/images/illustration-sign-up-mobile.svg);
+    content: url(../images/illustration-sign-up-mobile.svg);
   }
   .successState {
     height: 80vh;
